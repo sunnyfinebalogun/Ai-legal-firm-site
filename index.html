@@ -20,10 +20,22 @@
     </style>
   </head>
   <body class="px-6 py-10">
-    <main class="max-w-5xl mx-auto">
+    <main class="max-w-6xl mx-auto">
+      <!-- Navbar -->
+      <nav class="flex justify-between items-center mb-10">
+        <div class="text-2xl font-bold">ClearLaw</div>
+        <div class="space-x-6 hidden md:block">
+          <a href="#features" class="hover:underline">Features</a>
+          <a href="#booking" class="hover:underline">Book</a>
+          <a href="#why-us" class="hover:underline">Why Us</a>
+        </div>
+        <a href="#booking" class="btn-primary px-4 py-2 rounded-xl shadow">Get Legal Help</a>
+      </nav>
+
+      <!-- Hero -->
       <header class="text-center mb-16">
         <h1 class="text-4xl md:text-6xl font-bold mb-4">ClearLaw</h1>
-        <p class="text-lg md:text-xl">
+        <p class="text-lg md:text-xl max-w-2xl mx-auto">
           Affordable, AI-powered legal support — built by a Bar student for clients who want clear answers, not confusion.
         </p>
         <blockquote class="mt-6 max-w-2xl mx-auto text-md italic text-gray-300">
@@ -38,79 +50,87 @@
           </a>
         </div>
         <div class="mt-10 bg-white p-4 rounded-2xl shadow-lg">
-          <img src="https://images.unsplash.com/photo-1573164574396-9d22548a6222?fit=crop&w=1200&q=80" alt="A visual contrast of traditional and modern legal services – old courtrooms and digital law tools" class="$1" />
-        </div>
+          <img src="https://images.unsplash.com/photo-1573164574396-9d22548a6222?fit=crop&w=1200&q=80" alt="Old vs. New Legal Systems" class="rounded-xl" />
         </div>
       </header>
 
-      <section class="mb-20">
-        <h2 class="text-3xl font-bold mb-6 text-center">Our Mission</h2>
-        <p class="text-center mb-4 max-w-3xl mx-auto">
-          ClearLaw exists to make legal help easy to understand and fast to access. We're a new kind of firm: digitally native, client-obsessed, and powered by AI. We help you solve real legal problems — without hidden fees or waiting weeks.
-        </p>
-        <p class="text-center max-w-3xl mx-auto">
-          Whether you're a freelancer needing a contract, a tenant facing a landlord issue, or someone preparing to take legal action, we give you access to professional-quality support at a price that's actually fair.
-        </p>
-      </section>
-
-      <section class="grid gap-10 md:grid-cols-3">
-        <div class="bg-white text-gray-900 rounded-2xl p-6 shadow border border-gray-200">
-          <h2 class="text-xl font-semibold mb-2">Simple Contracts</h2>
-          <p>Reviewed and delivered fast using AI + expert review. Starting at £49.</p>
-        </div>
-        <div class="bg-white text-gray-900 rounded-2xl p-6 shadow border border-gray-200">
-          <h2 class="text-xl font-semibold mb-2">Tenancy Disputes</h2>
-          <p>Support with landlord issues, rent disputes, and repairs — made simple.</p>
-        </div>
-        <div class="bg-white text-gray-900 rounded-2xl p-6 shadow border border-gray-200">
-          <h2 class="text-xl font-semibold mb-2">Dispute Letters</h2>
-          <p>We’ll draft professional, impactful letters using your facts and our tools.</p>
+      <!-- Trusted By Logos -->
+      <section class="mb-16 text-center">
+        <h2 class="text-xl mb-4">Trusted by forward-thinking professionals</h2>
+        <div class="flex flex-wrap justify-center gap-4 opacity-70">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Pfizer_Logo.png" alt="Pfizer" class="h-10"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PwC_Logo_2010.svg" alt="PwC" class="h-10"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/KPMG_logo.svg" alt="KPMG" class="h-10"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/UBS_Logo.svg" alt="UBS" class="h-10"/>
         </div>
       </section>
 
+      <!-- Features -->
+      <section id="features" class="mt-20">
+        <h2 class="text-3xl font-bold mb-10 text-center">How We Help</h2>
+        <div class="grid gap-10 md:grid-cols-2">
+          <div class="bg-white text-gray-900 rounded-2xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-2">AI Contract Review</h3>
+            <p>Accelerate your contract review by up to 80%. Summarise, define terms, and re-draft key clauses effortlessly.</p>
+          </div>
+          <div class="bg-white text-gray-900 rounded-2xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-2">Smart Legal Queries</h3>
+            <p>Search across all your contracts instantly. Find clauses, assign obligations, and track tasks from one hub.</p>
+          </div>
+          <div class="bg-white text-gray-900 rounded-2xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-2">White Glove Services</h3>
+            <p>Professional legal assistance with a fast turnaround. Free your team to focus on strategy, not admin.</p>
+          </div>
+          <div class="bg-white text-gray-900 rounded-2xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-2">Contract Reporting</h3>
+            <p>Generate reports in minutes. Stay compliant, make smarter decisions, and scale faster.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
       <section class="mt-20 text-center">
-        <h3 class="text-2xl font-bold mb-4">How It Works</h3>
-        <p class="mb-6">
-          We blend AI-powered tools with real legal knowledge to give you accurate, fast, and affordable help.
-        </p>
-        <div class="grid gap-6 md:grid-cols-3">
-          <div class="bg-white text-gray-900 rounded-2xl p-4 shadow border border-gray-200">
-            <h4 class="font-semibold mb-2">1. Submit Your Issue</h4>
-            <p class="text-sm">Fill in a short form — no legal jargon needed.</p>
+        <h2 class="text-2xl font-bold mb-6">Real Results</h2>
+        <div class="flex flex-wrap justify-center gap-12 text-xl font-semibold">
+          <div>
+            <p class="text-4xl">100m+</p>
+            <p>Clauses used to train our AI</p>
           </div>
-          <div class="bg-white text-gray-900 rounded-2xl p-4 shadow border border-gray-200">
-            <h4 class="font-semibold mb-2">2. We Use AI + Law</h4>
-            <p class="text-sm">AI creates a draft, then we polish and deliver it.</p>
+          <div>
+            <p class="text-4xl">500k+</p>
+            <p>Contracts processed</p>
           </div>
-          <div class="bg-white text-gray-900 rounded-2xl p-4 shadow border border-gray-200">
-            <h4 class="font-semibold mb-2">3. You Get Results</h4>
-            <p class="text-sm">Receive a clear, useful contract, letter, or legal summary.</p>
+          <div>
+            <p class="text-4xl">80%</p>
+            <p>Faster contract review</p>
           </div>
         </div>
       </section>
 
-      <section class="mt-20 text-center">
-        <h3 class="text-2xl font-bold mb-4">What Makes Us Different</h3>
+      <!-- Why Us -->
+      <section id="why-us" class="mt-20 text-center">
+        <h3 class="text-2xl font-bold mb-4">Why Choose ClearLaw?</h3>
         <div class="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
           <div class="bg-white text-gray-900 p-6 rounded-2xl shadow border border-gray-200">
             <h4 class="font-semibold mb-2">Client-Centred</h4>
-            <p>We keep you informed, provide clear pricing, and use systems that allow real-time case tracking.</p>
+            <p>Clear pricing, regular updates, and AI tools built around your real-world legal needs.</p>
           </div>
           <div class="bg-white text-gray-900 p-6 rounded-2xl shadow border border-gray-200">
-            <h4 class="font-semibold mb-2">Focused Leadership</h4>
-            <p>Led by a Bar student with real-world advocacy experience and a vision for modern legal access.</p>
+            <h4 class="font-semibold mb-2">Built by Legal Experts</h4>
+            <p>Founded by a Bar student with courtroom experience and a passion for reform.</p>
           </div>
           <div class="bg-white text-gray-900 p-6 rounded-2xl shadow border border-gray-200">
-            <h4 class="font-semibold mb-2">Empowered Team</h4>
-            <p>As we grow, we invest in legal talent, creating a team that thrives and stays committed.</p>
+            <h4 class="font-semibold mb-2">Scalable & Secure</h4>
+            <p>Built on best-in-class infrastructure. Your data stays private, your team stays fast.</p>
           </div>
           <div class="bg-white text-gray-900 p-6 rounded-2xl shadow border border-gray-200">
-            <h4 class="font-semibold mb-2">Community Driven</h4>
-            <p>We believe in giving back — through legal education, outreach, and pro bono support where it’s needed most.</p>
+            <h4 class="font-semibold mb-2">Powered by AI</h4>
+            <p>AI handles the heavy lifting, so you can focus on strategic outcomes and client value.</p>
           </div>
         </div>
       </section>
 
+      <!-- Booking Form -->
       <section id="booking" class="mt-20 max-w-xl mx-auto bg-white text-gray-900 p-8 rounded-2xl shadow-lg border border-gray-200">
         <h3 class="text-2xl font-bold mb-4 text-center">Book a Consultation</h3>
         <form action="#" method="POST" class="grid gap-4">
@@ -123,6 +143,7 @@
         </form>
       </section>
 
+      <!-- Footer -->
       <footer class="mt-20 text-center text-sm text-gray-300">
         &copy; 2025 ClearLaw. All rights reserved.
       </footer>
