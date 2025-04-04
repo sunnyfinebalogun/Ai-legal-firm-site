@@ -5,55 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Law Firm I Wish Existed</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: linear-gradient(to bottom right, #e5f4ff, #fdfdfd);
+      }
+    </style>
   </head>
-  <body class="bg-gray-50 text-gray-900 px-6 py-10">
+  <body class="text-gray-900 px-6 py-10">
     <main class="max-w-4xl mx-auto">
       <header class="text-center mb-16">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">The Law Firm I Wish Existed</h1>
-        <p class="text-lg md:text-xl text-gray-600">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-blue-800">The Law Firm I Wish Existed</h1>
+        <p class="text-lg md:text-xl text-gray-700">
           Affordable, AI-powered legal help — built by a Bar student, designed for people like you.
         </p>
         <div class="mt-6">
-          <a href="#" class="bg-black text-white px-6 py-3 rounded-2xl shadow hover:bg-gray-800 transition">
+          <a href="#booking" class="bg-blue-700 text-white px-6 py-3 rounded-2xl shadow hover:bg-blue-900 transition">
             Book a Free Consultation
           </a>
         </div>
       </header>
 
       <section class="grid gap-10 md:grid-cols-3">
-        <div class="bg-white rounded-2xl p-6 shadow">
-          <h2 class="text-xl font-semibold mb-2">Simple Contracts</h2>
+        <div class="bg-white rounded-2xl p-6 shadow border border-blue-100">
+          <h2 class="text-xl font-semibold mb-2 text-blue-700">Simple Contracts</h2>
           <p class="text-gray-600">Reviewed and delivered fast using AI + expert review. Starting at £49.</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 shadow">
-          <h2 class="text-xl font-semibold mb-2">Tenancy Disputes</h2>
+        <div class="bg-white rounded-2xl p-6 shadow border border-blue-100">
+          <h2 class="text-xl font-semibold mb-2 text-blue-700">Tenancy Disputes</h2>
           <p class="text-gray-600">Support with landlord issues, rent disputes, and repairs — made simple.</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 shadow">
-          <h2 class="text-xl font-semibold mb-2">Dispute Letters</h2>
+        <div class="bg-white rounded-2xl p-6 shadow border border-blue-100">
+          <h2 class="text-xl font-semibold mb-2 text-blue-700">Dispute Letters</h2>
           <p class="text-gray-600">We’ll draft professional, impactful letters using your facts and our tools.</p>
         </div>
       </section>
 
       <section class="mt-20 text-center">
-        <h3 class="text-2xl font-bold mb-4">How It Works</h3>
-        <p class="text-gray-600 mb-6">
+        <h3 class="text-2xl font-bold mb-4 text-blue-800">How It Works</h3>
+        <p class="text-gray-700 mb-6">
           We blend AI-powered tools with real legal knowledge to give you accurate, fast, and affordable help.
         </p>
         <div class="grid gap-6 md:grid-cols-3">
-          <div class="bg-white rounded-2xl p-4 shadow">
-            <h4 class="font-semibold mb-2">1. Submit Your Issue</h4>
+          <div class="bg-white rounded-2xl p-4 shadow border border-blue-100">
+            <h4 class="font-semibold mb-2 text-blue-700">1. Submit Your Issue</h4>
             <p class="text-gray-600 text-sm">Fill in a short form — no legal jargon needed.</p>
           </div>
-          <div class="bg-white rounded-2xl p-4 shadow">
-            <h4 class="font-semibold mb-2">2. We Use AI + Law</h4>
+          <div class="bg-white rounded-2xl p-4 shadow border border-blue-100">
+            <h4 class="font-semibold mb-2 text-blue-700">2. We Use AI + Law</h4>
             <p class="text-gray-600 text-sm">AI creates a draft, then we polish and deliver it.</p>
           </div>
-          <div class="bg-white rounded-2xl p-4 shadow">
-            <h4 class="font-semibold mb-2">3. You Get Results</h4>
+          <div class="bg-white rounded-2xl p-4 shadow border border-blue-100">
+            <h4 class="font-semibold mb-2 text-blue-700">3. You Get Results</h4>
             <p class="text-gray-600 text-sm">Receive a clear, useful contract, letter, or legal summary.</p>
           </div>
         </div>
+      </section>
+
+      <section id="booking" class="mt-20 max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg border border-blue-100">
+        <h3 class="text-2xl font-bold mb-4 text-blue-800 text-center">Book a Consultation</h3>
+        <form action="#" method="POST" class="grid gap-4">
+          <input type="text" name="name" placeholder="Your Name" class="p-3 rounded border border-gray-300" required />
+          <input type="email" name="email" placeholder="Your Email" class="p-3 rounded border border-gray-300" required />
+          <textarea name="message" rows="4" placeholder="Tell us what you need help with..." class="p-3 rounded border border-gray-300" required></textarea>
+          <button type="submit" class="bg-blue-700 text-white px-6 py-3 rounded-2xl hover:bg-blue-900 transition">
+            Submit Request
+          </button>
+        </form>
       </section>
 
       <footer class="mt-20 text-center text-sm text-gray-500">
